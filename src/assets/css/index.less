@@ -1,0 +1,451 @@
+@import "./common.less";
+#index{
+  width: 100%;
+  color: #565656;
+}
+/*====================轮播===============*/
+#replay{
+  width: 100%;
+  height: 636px;
+}
+
+/*====================线上试戴===============*/
+#onlineWear,#offlineWear{
+  width: 100%;
+  overflow: hidden;
+}
+#onlineGif,#onlineText,#offlineText,.offlineRight
+,#brandLeft,#brandRight{
+  width: 50%;
+  height: 524px;
+}
+#onlineGif{
+  background-image: url("../../assets/images/index/huibai.gif");
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.floLeft{
+  float: left;
+}
+.floRight{
+  float: right;
+}
+#onlineText,#offlineText,.offlineRight,#brandLeft,#brandRight{
+  position: relative;
+  background-size: cover;
+}
+#onlineText{
+  text-align: right;
+  float: right;
+  background-image: url("../../assets/images/index/2.jpg");
+}
+.perfect{
+  /*opacity: 0;*/
+  right: 360px;
+  position: absolute;
+}
+.left{
+  visibility: hidden;
+}
+.right{
+  /*opacity: 1;*/
+  visibility: visible;
+  transform: translateX(300px);
+}
+#online1{
+  transition: all 0.8s 0.2s;
+  top: 30px;
+}
+#online2{
+  top: 110px;
+  transition: all 0.8s 0.1s;
+}
+#online3{
+  top: 140px;
+  transition: all 0.8s 0.2s;
+}
+#btnonline{
+  //position: absolute;
+  top: 220px;
+  transition: all 0.8s;
+}
+
+/*==========线下试戴=========*/
+#offlineText{
+  background-image: url("../../assets/images/index/1.jpg");
+}
+
+#appoint{
+  color: #ffffff;
+  //overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 15%;
+}
+.offleft{
+  //visibility: hidden;
+}
+.offright{
+  /*opacity: 1;*/
+  visibility: visible;
+  transform: translateX(300px);
+}
+.xiuxian{
+  visibility: visible;
+  transform: translateX(-300px);
+}
+.offline,.offline2{
+  position: absolute;
+}
+#offline1{
+  transition: all 0.8s 0.2s;
+  left: -40%;
+  top: 10px;
+}
+#offline2{
+  top: 30px;
+  left: 49%;
+  transition: all 0.8s 0.1s;
+}
+#offline3{
+  left: -40%;
+  top: 100px;
+  transition: all 0.8s 0.2s;
+}
+#btnSun{
+  //position: absolute;
+  top: 130px;
+  left: -40%;
+  transition: all 0.8s;
+}
+#btnxiu{
+  //position: absolute;
+  top: 130px;
+  left: -10%;
+  transition: all 0.8s;
+}
+#appoint>.perH1{
+  color: #ffffff;
+}
+#btnSun,#btnxiu{
+  margin-top: 20px;
+}
+#btnSun{
+  margin-right: 20px;
+}
+
+
+.perH2{
+  font-size: 1.4em;
+  margin: 17px 0;
+}
+.perH1{
+  font-size: 1.7em;
+  margin: 17px 0;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+.perP{
+  font-size: 1.1em;
+}
+
+/*===========线下试戴右边===========*/
+
+.offlineRight{
+  float: right;
+  text-align: center;
+}
+.rightTitle{
+  margin: 20px auto;
+  width: 50%;
+}
+#Text{
+  width: 58%;
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}
+.rightTitle>img{
+  width: 70px;
+  height: 70px
+}
+.rightTitle>p{
+  float: right;
+}
+#Text>p{
+  clear: both;
+  font-size: @mainfontsize * 1.2;
+  line-height: 3.8em;
+}
+.totop{
+  visibility: hidden;
+}
+.tobottom{
+  visibility: visible;
+  transform: translateY(432px);
+}
+#line{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -432px;
+  transition: all 0.8s;
+}
+#width,#height{
+  border: 1px solid @mainblack;
+  position: absolute;
+}
+#width{
+  width: 70%;
+  height: 420px;
+  top: 8%;
+  left: 15%;
+}
+#height{
+  width: 68%;
+  height: 430px;
+  top: 7%;
+  left: 16%;
+}
+/*=================查看品牌===============*/
+#brand{
+  overflow: hidden;
+}
+/*=====移动==*/
+.bleft{
+  visibility: hidden;
+}
+.btoright{
+  //left: 20%;
+  visibility: visible;
+  transform: translateX(676.5px);
+}
+.bToleft{
+  //left: 20%;
+  visibility: visible;
+  transform: translateX(-676.5px);
+}
+
+#brandLeft{
+  position: absolute;
+  left: -676.5px;
+  transition: all 0.8s;
+}
+#brandRight{
+  text-align: center;
+  left: 676.5px;
+  transition: all 0.8s;
+}
+#brandRight>img{
+  margin-top: 13%;
+}
+#brandText{
+  position: absolute;
+  width: 80%;
+  top: 12%;
+  left: 18%;
+}
+#brandText>.perP{
+  margin: 40px 0;
+  line-height: 1.7em;
+}
+
+/*照片墙*/
+#photoWall{
+  padding: 30px 0;
+  background-color: @bggrey;
+  width: 100%;
+  height: 717px;
+}
+#btnPhoto{
+  margin: 20px 0 46px 0;
+}
+#auto{
+  width: 84%;
+  height: 717px;
+  margin: 0 auto;
+  /*border: 1px solid red;*/
+  text-align: center;
+  position: relative;
+}
+#auto>.perH1{
+  margin: 50px 0 20px;
+}
+.transition{
+  transform: scale(1);
+  transition: all 0.8s;
+  position: absolute;
+
+}
+.transition:hover{
+  transform: scale(1.1);
+  transition: all 0.8s;
+  z-index: 100;
+}
+.p1{
+  left: 34%;
+  width: 318px;
+}
+.p2{
+  left: 58%;
+  width: 210px;
+}
+.p3{
+  left: 72%;
+  top: 64%;
+  width: 190px;
+}
+.p4{
+  top: 27%;
+  left: 11%;
+  width: 270px;
+
+}
+.p5{
+  top: 43%;
+  left: 2%;
+  z-index: 1;
+  width: 212px
+}
+.p6{
+  top: 42%;
+  left: 74%;
+  width: 240px;
+}
+.p7{
+  left: 59%;
+  top: 45%;
+  width: 172px;
+}
+.p8{
+  top: 44%;
+  left: 36%;
+  z-index: 1;
+  width: 268px;
+}
+.p9{
+  top: 65%;
+  left: 42%;
+  z-index: 2;
+  width: 250px;
+}
+.p10{
+  top: 51%;
+  left: 15%;
+  width: 324px;
+}
+/* #container{
+   /!*position: absolute;
+   top: 50%;*!/
+   margin-top: 4%;
+   width: 100%;
+   height: 72%;
+   border: 1px solid;
+ }*/
+
+/*品牌logo*/
+#brandLogo{
+  width: 100%;
+  height: 200px;
+  padding: 20px 0;
+  text-align: center;
+}
+.logoAfter:not(#logo5){
+  margin-right: 50px;
+}
+.logoAfter{
+  position: relative;
+  width: 160px;
+  height: 70px;
+  margin: 20px 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  transition: all 0.8s;
+  /*border: 1px solid red;*/
+}
+
+.logoAfter:hover{
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+.logoAuto{
+  margin: 0 auto;
+  width: 76%;
+  overflow: hidden;
+}
+
+/*.logo1{
+  background-image: url("../../assets/images/index/BOLON.png");
+}
+.logo2{
+  background-image: url("../../assets/images/index/GUCCI.png");
+}
+.logo3{
+  background-image: url("../../assets/images/index/LOHO.png");
+}
+.logo4{
+  background-image: url("../../assets/images/index/RodenStock.png");
+}
+.logo5{
+  background-image: url("../../assets/images/index/PASR.png");
+}*/
+
+/*潮流资讯*/
+#fashion{
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: @bggrey;
+}
+#fashionAuto{
+  width: 86%;
+  margin: 0 auto;
+}
+#faLeft{
+  width: 33%;
+  padding-bottom: 20px;
+}
+#faRight img{
+  width: 350px;
+}
+.faImg{
+  float: left;
+  position: relative;
+}
+.faImg:after{
+  content: '';
+  font-size: @mainfontsize;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.62);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.btnCL{
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 27%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.faImg:hover:after,
+.faImg:hover .btnCL{
+  opacity: 1;
+  transition: all 0.3s;
+}
+.faImg:first-child{
+  margin-right: 20px;
+}
+.icon-size{
+  font-size: @mainfontsize * 2.5;
+  margin: 30px 30px 30px 0;
+}
+#website{
+  margin-top: 30px;
+}
